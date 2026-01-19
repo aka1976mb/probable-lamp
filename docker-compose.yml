@@ -1,0 +1,16 @@
+services:
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:v0.5.20-cuda
+    ports:
+      - "3000:8080"
+    volumes:
+      - open-webui:/app/backend/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+volumes:
+  open-webui:
