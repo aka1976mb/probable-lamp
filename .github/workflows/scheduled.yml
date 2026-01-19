@@ -1,0 +1,15 @@
+name: Weekly Scheduled Workflow
+
+on:
+  schedule:
+    # Runs at 5:00 a.m. UTC every Monday (8:00 p.m. AKST Sunday)
+    - cron: '0 5 * * 1'
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Run a script
+        run: echo "Batch Processing Task Executed at $(date)"
