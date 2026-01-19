@@ -7,7 +7,7 @@
 > You can find installation instructions via [relevant operating system](https://docs.astral.sh/uv/getting-started/installation/) documentation.
 
 - Clone: `gh repo clone aksbdc/nocodb-to-gpt-via-api`
-- Source: `cd nocodb-to-gpt-via-api`
+- Source: `cd repo "
 - Build: [`make`](https://www.gnu.org/software/make/)
 
 ### Environment Variables
