@@ -10,6 +10,15 @@
 - Source: `cd nocodb-to-gpt-via-api`
 - Build: [`make`](https://www.gnu.org/software/make/)
 
+### Environment Variables
+
+If you encounter issues with `python-dotenv` not loading the `.env` file, you can set the environment variables directly in your shell before running the script.
+
+For PowerShell:
+```powershell
+$env:API_KEY='YOUR_API_KEY'; $env:TABLE_NAME='YOUR_TABLE_NAME'; $env:DEFAULT_VIEW='YOUR_DEFAULT_VIEW'; uv run main.py
+```
+
 ### Branch Management
 
 - `main` → production ready environment.
